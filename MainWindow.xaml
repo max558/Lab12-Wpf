@@ -16,23 +16,23 @@
                                 <RowDefinition/>
                                 <RowDefinition/>
                             </Grid.RowDefinitions>
-                            <Path Grid.Row="0" Stroke="Black" HorizontalAlignment="Center" StrokeThickness="3">
+                            <Path Grid.Row="0" Stroke="Gray" HorizontalAlignment="Center" StrokeThickness="3">
                                 <Path.Data>
-                                    <RectangleGeometry Rect="0,0,15,15" RadiusX="4" RadiusY="4"/>
+                                    <RectangleGeometry Rect="0,0,18,18" RadiusX="4" RadiusY="4"/>
                                 </Path.Data>
                             </Path>
 
-                            <Path Grid.Row="0" x:Name="checkIsNone" Fill="Black" Stroke="Black" HorizontalAlignment="Center" Opacity="0">
+                            <Path Grid.Row="0" x:Name="checkIsNone" Fill="Gray" Stroke="Gray" HorizontalAlignment="Center" Opacity="0">
                                 <Path.Data>
-                                    <EllipseGeometry Center="4.5,7.5" RadiusX="5" RadiusY="5"/>
+                                    <EllipseGeometry Center="4,9" RadiusX="5" RadiusY="5"/>
                                 </Path.Data>
                             </Path>
                             
-                            <Path Grid.Row="0" x:Name="checkIsFalse" Stroke="Black" HorizontalAlignment="Center" StrokeThickness="3" Opacity="0">
+                            <Path Grid.Row="0" x:Name="checkIsFalse" Stroke="Gray" HorizontalAlignment="Center" StrokeThickness="3" Opacity="0">
                                 <Path.Data>
                                     <GeometryGroup FillRule="Nonzero" >
-                                        <LineGeometry StartPoint="0,0" EndPoint="15,15" />
-                                        <LineGeometry StartPoint="0,15" EndPoint="15,0"/>
+                                        <LineGeometry StartPoint="0,0" EndPoint="18,18" />
+                                        <LineGeometry StartPoint="0,18" EndPoint="18,0"/>
                                     </GeometryGroup>
                                 </Path.Data>
                             </Path>
