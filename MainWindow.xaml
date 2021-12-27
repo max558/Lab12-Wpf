@@ -28,7 +28,7 @@
                                 </Path.Data>
                             </Path>
                             
-                            <Path Grid.Row="0" x:Name="checkIsFalse" Stroke="Gray" HorizontalAlignment="Center" StrokeThickness="3" Opacity="0">
+                            <Path Grid.Row="0" x:Name="checkIsTrue" Stroke="Gray" HorizontalAlignment="Center" StrokeThickness="3" Opacity="0">
                                 <Path.Data>
                                     <GeometryGroup FillRule="Nonzero" >
                                         <LineGeometry StartPoint="0,0" EndPoint="18,18" />
@@ -42,15 +42,15 @@
                         <ControlTemplate.Triggers>
                             <Trigger Property="IsChecked" Value="True">
                                 <Setter TargetName="checkIsNone" Property="Opacity" Value="0"/>
-                                <Setter TargetName="checkIsFalse" Property="Opacity" Value="1"/>
+                                <Setter TargetName="checkIsTrue" Property="Opacity" Value="1"/>
                             </Trigger>
                             <Trigger Property="IsChecked" Value="False">
                                 <Setter TargetName="checkIsNone" Property="Opacity" Value="0"/>
-                                <Setter TargetName="checkIsFalse" Property="Opacity" Value="0"/>
+                                <Setter TargetName="checkIsTrue" Property="Opacity" Value="0"/>
                             </Trigger>
                             <Trigger Property="IsChecked" Value="{x:Null}">
                                 <Setter TargetName="checkIsNone" Property="Opacity" Value="1"/>
-                                <Setter TargetName="checkIsFalse" Property="Opacity" Value="0"/>
+                                <Setter TargetName="checkIsTrue" Property="Opacity" Value="0"/>
                             </Trigger>
                         </ControlTemplate.Triggers>
                     </ControlTemplate>
